@@ -189,6 +189,12 @@ app.get('/logout', function(req, res){
   res.redirect('/');
 });
 
+//health check
+app.get('/hc', function (req, res, next) {
+  res.send('I am healthy!');
+  return next();
+});
+
 var port = process.env.PORT || 3000;
 console.log('listening on port ', port);
 app.listen(port);

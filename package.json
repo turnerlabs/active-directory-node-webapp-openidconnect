@@ -1,6 +1,6 @@
 {
   "name": "active-directory-node-webapp-openidconnect",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
     "express": "3.x",
     "ejs": ">= 0.0.0",
