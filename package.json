@@ -1,5 +1,5 @@
 {
-  "name": "passport-azure-ad-login-oidc",
+  "name": "active-directory-node-webapp-openidconnect",
   "version": "0.0.1",
   "dependencies": {
     "express": "3.x",
