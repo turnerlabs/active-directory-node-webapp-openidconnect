@@ -71,8 +71,8 @@ var findByEmail = function(email, fn) {
   return fn(null, null);
 };
 
-// Use the OIDCStrategy within Passport. (Section 2) 
-// 
+// Use the OIDCStrategy within Passport. (Section 2)
+//
 //   Strategies in passport require a `validate` function, which accept
 //   credentials (in this case, an OpenID identifier), and invoke a callback
 //   with a user object.
@@ -189,8 +189,9 @@ app.get('/logout', function(req, res){
   res.redirect('/');
 });
 
-
-app.listen(3000);
+var port = process.env.PORT || 3000;
+console.log('listening on port ', port);
+app.listen(port);
 
 
 // Simple route middleware to ensure user is authenticated. (Section 4)
